@@ -1,0 +1,146 @@
+/* Levels buttons */
+html, body {
+    height: 100%;
+  }
+  
+  .wrap {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    position: absolute;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    font-family: "Changa";
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+    letter-spacing: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+  }
+  
+  a div[class^="wave-"] {
+    position: absolute;
+    z-index: 0;
+    height: 200px;
+    width: 200px;
+    
+  /*  Couldn't decide on the border-radius  */
+  /*   border-radius: 44% 84% 63% 74% / 20% 80% 20% 73%; */
+  /*   border-radius: 44% 100% 63% 74% / 20% 75% 71% 73%; */
+    border-radius: 47%;
+    
+    opacity: .5;
+  /*  NOTE: Took out the fade in for the pen  */
+    /*  Fade in to improve(?) accessibility  */
+  /*   opacity: 0; */
+  /*   transition: opacity 1.5s ease-in-out; */
+    
+  }
+  
+  /* a:hover div[class^="wave-"] {
+    opacity: .2;
+  } */
+  
+  
+  
+  a:hover .wave-1 {
+    animation: wave-1 6s infinite linear;
+  }
+  
+  a:hover .wave-2 {
+    animation: wave-2 6s infinite linear;
+  }
+  
+  @keyframes wave-1 {
+    0% {
+      transform: rotate3d(0,0,1,20deg);
+    }
+    
+    50% {
+      transform: rotate3d(0,0,1,200deg);
+      
+    }
+    
+    100% {
+      transform: rotate3d(0,0,1,380deg);
+    }
+  }
+  
+  @keyframes wave-2 {
+    0% {
+      transform: rotate3d(0,0,1,180deg);
+    }
+    
+    50% {
+      transform: rotate3d(0,0,1,0deg);
+      right: 110px;
+    }
+    
+    100% {
+      transform: rotate3d(0,0,1,-180deg);
+    }
+  } 
+
+  #opt1 {
+    top: 10%;
+    left: 20%;
+    width: 50%;
+    font-size: 100%;
+    background-color: #406098; 
+    
+  }
+
+  #opt2 {
+    top: 22%;
+    left: 20%;
+    width: 50%;
+    font-size: 100%;
+    background-color: #d43900; 
+  }
+
+  #opt3 {
+    top: 34%;
+    left: 20%;
+    width: 50%;
+    font-size: 100%;
+    background-color: #406098; 
+  }
+
+  #opt4 {
+    top: 46%;
+    left: 20%;
+    width: 50%;
+    font-size: 100%;
+    background-color: #d43900; 
+  }
+
+  /* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+
+/* code that is here will apply to any screen size */

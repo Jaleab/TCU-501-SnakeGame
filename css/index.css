@@ -1,0 +1,119 @@
+html, body {
+    width: 100%;
+    max-width: 608px;
+    margin: 0 auto;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+canvas{
+    width: 100%;
+    height: 62%;
+    max-width: 608px;
+    margin: 0 auto;
+    position: absolute;    
+} 
+
+
+
+#rotateMode{
+    border-radius: 55%;
+    width: 215px;
+    height: 200px;
+    background-color: gray;
+    color:white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 67.5%;
+    right: 30%;   
+  }
+  
+#leftKey{
+    z-index:-1;
+    position:absolute;
+    top:50%;
+    left:0px;
+    transform:translateY(-50%);
+}
+
+#rightKey{
+    z-index:-1;
+    position:absolute;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
+}
+
+#upKey{
+    z-index:-1;
+    position:absolute;
+    top:0px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+#downKey{
+    z-index:-1;
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+#change{
+    position:absolute;
+    bottom:34.5%;
+    left:0%;
+    font-family: "Changa";
+    font-size: 130%;
+}
+
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+ span {cursor:pointer; }
+		.number{
+            margin:16%;
+            position:absolute;
+            bottom: 19.5%;
+            left:-16%;
+		}
+		.minus, .plus{
+			width:8%;
+			height: 6%;
+			background:#f2f2f2;
+			border-radius:4px;
+			padding:8px 5px 8px 5px;
+            border:1px solid #ddd;
+            font-family: "Changa";
+            font-size: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+		}
+		input{
+            height: 100%;
+      width: 10%;
+      text-align: center;
+      font-family: "Changa";
+      font-size: 130%;
+			border:1px solid #ddd;
+			border-radius:4px;
+      display: inline-block;
+      vertical-align: middle;
+        }
+      
+      
