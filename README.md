@@ -7,7 +7,7 @@ cordova run android --release -- --keystore=app-key.keystore --storePassword=cha
 
 Con los siguientes plugins:
 
-Terminal en el proyecto Crodova: cordova plugins ls
+Terminal en el proyecto Cordova: cordova plugins ls
   cordova-plugin-proguard 2.1.0 "Cordova plugin ProGuard"
   cordova-plugin-whitelist 1.3.4 "Whitelist"
   
